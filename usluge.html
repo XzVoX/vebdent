@@ -1,3 +1,4 @@
+<!-- Usluge -->
 <!DOCTYPE html>
 <html lang="hr">
 <head>
@@ -10,20 +11,36 @@
     <header>
         <div class="logo">Moja Stranica</div>
         <nav>
-            <ul>
-                <li><a href="index.html" class="nav-link">Naslovna</a></li>
-                <li><a href="onama.html" class="nav-link">O nama</a></li>
-                <li><a href="usluge.html" class="nav-link active">Usluge</a></li>
-                <li><a href="cjenik.html" class="nav-link">Cjenik</a></li>
-                <li><a href="radovi.html" class="nav-link">Radovi</a></li>
-                <li><a href="kontakti.html" class="nav-link">Kontakti</a></li>
+            <ul class="nav-list">
+                <li><a href="index.html">Naslovna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li class="active"><a href="usluge.html">Usluge</a></li>
+                <li><a href="cjenik.html">Cjenik</a></li>
+                <li><a href="radovi.html">Radovi</a></li>
+                <li><a href="kontakti.html">Kontakti</a></li>
             </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </nav>
     </header>
+
     <section>
         <h1>Usluge</h1>
-        <p>Opis usluga koje nudimo...</p>
+        <p>Ovo je sadržaj stranice Usluge.</p>
     </section>
-    <script src="script.js"></script>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-list');
+            const blurEffect = document.querySelector('.blur-effect');
+            menu.classList.toggle('show');
+            blurEffect.classList.toggle('show');
+        }
+    </script>
+
+    <div class="blur-effect"></div>
 </body>
 </html>

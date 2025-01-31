@@ -1,10 +1,10 @@
-<!-- index.html -->
+<!-- Naslovna Stranica -->
 <!DOCTYPE html>
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naslovna</title>
+    <title>Naslovna Stranica</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,17 +28,24 @@
     </header>
 
     <section>
-        <h1>Dobrodošli na Naslovnu stranicu!</h1>
-        <p>Ovdje će biti sadržaj tvoje naslovne stranice.</p>
+        <h1>Naslovna</h1>
+        <p>Ovo je sadržaj naslovne stranice.</p>
     </section>
 
-    <div class="blur-effect" id="blur"></div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-list');
+            const blurEffect = document.querySelector('.blur-effect');
+            menu.classList.toggle('show');
+            blurEffect.classList.toggle('show');
+        }
+    </script>
 
-    <script src="script.js"></script>
+    <div class="blur-effect"></div>
 </body>
 </html>
 
-<!-- onama.html -->
+<!-- O nama -->
 <!DOCTYPE html>
 <html lang="hr">
 <head>
@@ -69,171 +76,18 @@
 
     <section>
         <h1>O nama</h1>
-        <p>Ovdje će biti informacije o nama.</p>
+        <p>Ovo je sadržaj stranice O nama.</p>
     </section>
 
-    <div class="blur-effect" id="blur"></div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-list');
+            const blurEffect = document.querySelector('.blur-effect');
+            menu.classList.toggle('show');
+            blurEffect.classList.toggle('show');
+        }
+    </script>
 
-    <script src="script.js"></script>
-</body>
-</html>
-
-<!-- usluge.html -->
-<!DOCTYPE html>
-<html lang="hr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usluge</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">Moja Stranica</div>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Naslovna</a></li>
-                <li><a href="onama.html">O nama</a></li>
-                <li class="active"><a href="usluge.html">Usluge</a></li>
-                <li><a href="cjenik.html">Cjenik</a></li>
-                <li><a href="radovi.html">Radovi</a></li>
-                <li><a href="kontakti.html">Kontakti</a></li>
-            </ul>
-            <div class="menu-icon" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
-
-    <section>
-        <h1>Naše usluge</h1>
-        <p>Ovdje će biti opis naših usluga.</p>
-    </section>
-
-    <div class="blur-effect" id="blur"></div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-<!-- cjenik.html -->
-<!DOCTYPE html>
-<html lang="hr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cjenik</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">Moja Stranica</div>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Naslovna</a></li>
-                <li><a href="onama.html">O nama</a></li>
-                <li><a href="usluge.html">Usluge</a></li>
-                <li class="active"><a href="cjenik.html">Cjenik</a></li>
-                <li><a href="radovi.html">Radovi</a></li>
-                <li><a href="kontakti.html">Kontakti</a></li>
-            </ul>
-            <div class="menu-icon" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
-
-    <section>
-        <h1>Naš cjenik</h1>
-        <p>Ovdje će biti prikaz našeg cjenika.</p>
-    </section>
-
-    <div class="blur-effect" id="blur"></div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-<!-- radovi.html -->
-<!DOCTYPE html>
-<html lang="hr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radovi</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">Moja Stranica</div>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Naslovna</a></li>
-                <li><a href="onama.html">O nama</a></li>
-                <li><a href="usluge.html">Usluge</a></li>
-                <li><a href="cjenik.html">Cjenik</a></li>
-                <li class="active"><a href="radovi.html">Radovi</a></li>
-                <li><a href="kontakti.html">Kontakti</a></li>
-            </ul>
-            <div class="menu-icon" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
-
-    <section>
-        <h1>Naši radovi</h1>
-        <p>Ovdje će biti prikaz naših radova.</p>
-    </section>
-
-    <div class="blur-effect" id="blur"></div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-<!-- kontakti.html -->
-<!DOCTYPE html>
-<html lang="hr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakti</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="logo">Moja Stranica</div>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Naslovna</a></li>
-                <li><a href="onama.html">O nama</a></li>
-                <li><a href="usluge.html">Usluge</a></li>
-                <li><a href="cjenik.html">Cjenik</a></li>
-                <li><a href="radovi.html">Radovi</a></li>
-                <li class="active"><a href="kontakti.html">Kontakti</a></li>
-            </ul>
-            <div class="menu-icon" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
-
-    <section>
-        <h1>Kontakt informacije</h1>
-        <p>Ovdje će biti prikaz kontakt informacija.</p>
-    </section>
-
-    <div class="blur-effect" id="blur"></div>
-
-    <script src="script.js"></script>
+    <div class="blur-effect"></div>
 </body>
 </html>

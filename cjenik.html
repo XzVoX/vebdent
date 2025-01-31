@@ -1,9 +1,10 @@
+<!-- Cjenik -->
 <!DOCTYPE html>
 <html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O nama</title>
+    <title>Cjenik</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,9 +13,9 @@
         <nav>
             <ul class="nav-list">
                 <li><a href="index.html">Naslovna</a></li>
-                <li class="active"><a href="onama.html">O nama</a></li>
+                <li><a href="onama.html">O nama</a></li>
                 <li><a href="usluge.html">Usluge</a></li>
-                <li><a href="cjenik.html">Cjenik</a></li>
+                <li class="active"><a href="cjenik.html">Cjenik</a></li>
                 <li><a href="radovi.html">Radovi</a></li>
                 <li><a href="kontakti.html">Kontakti</a></li>
             </ul>
@@ -27,12 +28,19 @@
     </header>
 
     <section>
-        <h1>O nama</h1>
-        <p>Ovdje će biti informacije o nama.</p>
+        <h1>Cjenik</h1>
+        <p>Ovo je sadržaj stranice Cjenik.</p>
     </section>
 
-    <div class="blur-effect" id="blur"></div>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.nav-list');
+            const blurEffect = document.querySelector('.blur-effect');
+            menu.classList.toggle('show');
+            blurEffect.classList.toggle('show');
+        }
+    </script>
 
-    <script src="script.js"></script>
+    <div class="blur-effect"></div>
 </body>
 </html>
