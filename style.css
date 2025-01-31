@@ -46,7 +46,6 @@ nav {
     background-color: #444;
 }
 
-/* Stil za padajući meni */
 .menu-icon {
     display: none;
     cursor: pointer;
@@ -86,19 +85,11 @@ nav {
     .nav-list li {
         text-align: left;
         padding: 15px;
-        position: relative;
     }
 
     .nav-list li a {
         color: #333;
         font-size: 18px;
-    }
-
-    .nav-list li.active::before {
-        content: '\25CF';
-        color: #007bff;
-        margin-right: 10px;
-        font-size: 10px;
     }
 
     .menu-icon {

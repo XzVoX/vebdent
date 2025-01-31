@@ -1,13 +1,11 @@
 function toggleMenu() {
     const menu = document.querySelector('.nav-list');
+    const blur = document.getElementById('blur');
     menu.classList.toggle('show');
+    blur.classList.toggle('show');
 }
 
-// Osigurava da se navigacija pravilno prikazuje prilikom promjene veličine prozora
-window.addEventListener('resize', () => {
-    const menu = document.querySelector('.nav-list');
-    const menuIcon = document.querySelector('.menu-icon');
-    if (window.innerWidth > 768) {
-        menu.classList.remove('show');
-    }
+document.getElementById('blur').addEventListener('click', () => {
+    document.querySelector('.nav-list').classList.remove('show');
+    document.getElementById('blur').classList.remove('show');
 });
